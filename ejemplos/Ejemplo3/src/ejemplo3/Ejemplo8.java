@@ -16,7 +16,7 @@ package ejemplo3;
  *
  * @author reroes
  */
-public class Ejemplo7 {
+public class Ejemplo8 {
 
     public static void main(String[] args) {
         // Condicionales aninados
@@ -26,40 +26,49 @@ public class Ejemplo7 {
         // >= 0 < 3 Reprobado
         // las notas no pueden pasar de 10
         // Si la nota fuera de rango es negativa hay que indicarlo
-        double promedio = -5;
+        double promedio = 2.9;
+        String mensaje = "";
         
 
-        if (promedio >= 10) {
-            System.out.printf("Estudiante aprobado con un "
+        if (promedio >= 7.5) {
+            //System.out.printf("Estudiante aprobado con un "
+             //       + "promedio: %.2f\n", promedio);
+            //mensaje = "Estudiante aprobado con un "
+              //      + "promedio:" + promedio;
+            mensaje = String.format("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
+                    
         } else {
             if ((promedio>= 5) && (promedio < 7.5)) {
-                System.out.printf("Estudiante en suspenso con un "
+                mensaje = String.format("Estudiante en suspenso con un "
                         + "promedio: %.2f\n", promedio);
         } else {
-            if ((promedio>= 3)  && (promedio >= 5) && (promedio < 5)) {
-                System.out.printf("Estudiante en recuperacion con un "
+            if ((promedio>= 5)  && (promedio >= 7.5) && (promedio < 5)) {
+                mensaje = String.format("Estudiante en recuperacion con un "
                         + "promedio: %.2f\n", promedio);        
          } else {    
                  if ((promedio >=0) && (promedio < 3)) {
-                System.out.printf("Estudiante reprobado con un "
+                mensaje = String.format("Estudiante reprobado con un "
                         + "promedio: %.2f\n", promedio);
          } else { 
             
             if (promedio< 0)
-                 System.out.printf("La nota es negativa y esta fuera de rango "
+                 mensaje = String.format("La nota es negativa y esta fuera "
+                         + "de rango "
                        , promedio);
             
-                System.out.printf("La nota es positiva y esta dentro de rango "
+                mensaje = String.format("La nota es positiva y esta dentro de "
+                        + "rango "
                        , promedio);
                  
                  }        
                 
                }
+            System.out.printf("s/n", mensaje);
 
             }
 
         }
     }
-
 }
+
