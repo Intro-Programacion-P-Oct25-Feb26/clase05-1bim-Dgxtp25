@@ -29,6 +29,7 @@ public class Ejemplo8 {
         double promedio = 2.9;
         String mensaje = "";
         
+        
 
         if (promedio >= 7.5) {
             //System.out.printf("Estudiante aprobado con un "
@@ -64,7 +65,7 @@ public class Ejemplo8 {
                  }        
                 
                }
-            System.out.printf("s/n", mensaje);
+            System.out.printf("mensaje");
 
             }
 
